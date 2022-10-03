@@ -1,8 +1,8 @@
 /* Variables */
-$color-one: #b4aeae;
+$color-one: #ada6a6;
 $color-two: #fff;
 $color-three: rgb(255, 196, 0);
-$color-four: rgb(185, 182, 182);
+$color-four: rgb(199, 199, 199);
 /*kolory bazowe czcionki itp.*/
 
 
@@ -207,23 +207,24 @@ footer {
     margin: 0 auto;
     padding: 30px;
     background: $color-two;
-}
-.row {
-    li {
-        margin: 0;
-        padding: 5px 10px;
+    .row {
+        li {
+            margin: 0;
+            padding: 5px 5px;
+        }
+        li i {
+           font-size: 20px;
+           background: rgb(0, 0, 0); 
+           height: 40px;
+           width: 40px;
+           line-height: 40px;
+           border-radius: 50%;
+           color: $color-two;
+           transition: 1s all;
+           &:hover {
+            scale: (1.2);
+           }
+        }
     }
-    li i {
-       font-size: 20px;
-       background: rgb(0, 0, 0); 
-       height: 40px;
-       width: 40px;
-       line-height: 40px;
-       border-radius: 50%;
-       color: $color-two;
-       transition: 1s all;
-       &:hover {
-        scale: (1.2);
-       }
-    }
 }
+
