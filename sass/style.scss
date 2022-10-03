@@ -1,3 +1,26 @@
-h1 {
-    color: rgb(30, 255, 0);
+/* Variables */
+
+/*kolory bazowe czcionki itp.*/
+
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: "Josefin Sans", sans-serif;
+  }
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+section {
+    padding: 96px 0;
 }
