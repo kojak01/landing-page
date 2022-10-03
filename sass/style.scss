@@ -28,6 +28,8 @@ body {
 section {
     padding: 96px 0;
 }
+/* Website Logo */
+
 
 /* Navigation */
 
@@ -73,9 +75,14 @@ section {
 
 /*Header*/
 .main {
+    position: relative;
     background-image: url("/images/background.png");
     border: 3px solid pink;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
 }
+
 
 /*Button*/
 
