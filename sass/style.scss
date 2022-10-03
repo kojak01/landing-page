@@ -1,5 +1,7 @@
 /* Variables */
-
+$color-one: rgb(92, 143, 33);
+$color-two: #fff;
+$color-three: rgb(233, 233, 25);
 /*kolory bazowe czcionki itp.*/
 
 
@@ -20,7 +22,52 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
+    border: 1px solid yellow;
 }
 section {
     padding: 96px 0;
+}
+
+/* Navigation */
+
+.navigation {
+    background: $color-one;
+    padding: 12px 0;
+    border: 2px solid orange;
+}   ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-right: 36px;
+        border: 1px solid red;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        color: $color-two;
+        cursor: pointer;
+        &:hover {
+            color: $color-three;
+        }
+    }
+
+}
+/* Navigation second level */
+.navigation ul ul li {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+}   ul ul {
+    display: none; // hiding second lvl navigation
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-one;
+    color: $color-two;
+}
+.navigation li:hover ul {
+    display: block;
 }
