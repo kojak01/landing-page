@@ -48,7 +48,7 @@ section {
 /* Navigation */
 
 .navigation {
-    padding: 12px 0;
+    padding: 12px 0 140px;
 }   ul {
     padding: 0;
     margin: 0;
@@ -118,6 +118,7 @@ header {
 /*Button*/
     .btn {
         padding-bottom: 80px;
+        padding-top: 20px;
     }
     button {
         cursor: pointer;
@@ -157,7 +158,7 @@ header {
         margin-bottom: 40px;
     }
     .box {
-        padding: 0 20px;
+        margin:10px 20px;
         flex: 1;
         .icon {
             padding-top: 20px;
@@ -174,9 +175,13 @@ header {
             color: $color-two;
             line-height: 60px;
             border-radius: 50%;
+            transition: 1s all;
+            &:hover {
+                scale: (1.2);
+            }
         }
+        
     }
-    
 }
 /*Images our portfolio section*/
 
@@ -190,7 +195,35 @@ img {
 }
 .scale {
     cursor: pointer;
+    background: $color-two;
 }
 .scale:hover img {
     scale: (1.05);
+}
+
+/* Footer */
+footer {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px;
+    background: $color-two;
+}
+.row {
+    li {
+        margin: 0;
+        padding: 5px 10px;
+    }
+    li i {
+       font-size: 20px;
+       background: rgb(0, 0, 0); 
+       height: 40px;
+       width: 40px;
+       line-height: 40px;
+       border-radius: 50%;
+       color: $color-two;
+       transition: 1s all;
+       &:hover {
+        scale: (1.2);
+       }
+    }
 }
