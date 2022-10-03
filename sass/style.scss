@@ -17,6 +17,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: "Josefin Sans", sans-serif;
+    min-width: 400px;
   }
 .container {
     max-width: 1140px;
@@ -78,13 +79,46 @@ section {
     position: relative;
     background-image: url("/images/background.png");
     border: 3px solid pink;
-    height: 500px;
     background-position: center;
     background-size: cover;
+}
+header {
+    padding: 100px 0 20px;
+    h1 {
+        flex: 100%;
+        font-size: 40px;
+        color: $color-two;
+        margin: auto;
+    }
+    h2 {
+        flex: 100%;
+        font-size: 35px;
+        color: $color-two;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        margin: auto;
+    }
 }
 
 
 /*Button*/
+    .btn {
+        margin-bottom: 100px;
+
+    }
+    button {
+        cursor: pointer;
+        background: rgb(255, 196, 0);
+        padding: 15px 20px;
+        border: none;
+        border-radius: 2px;
+        color: $color-two;
+        font-weight: 600;
+        transition: 1s all;
+    }
+    button:hover {
+        scale:(1.1);
+    }
 
 
 /*Section Services and Our Portfolio*/
