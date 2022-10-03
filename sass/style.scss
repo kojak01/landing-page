@@ -160,7 +160,6 @@ header {
         flex: 1;
         border: 1px solid blue;
         .icon {
-            border: 1px solid red;
             padding-top: 20px;
             margin: 10px 0;
         }
@@ -168,9 +167,13 @@ header {
             margin: 0;
         }
         i {
-            font-size: 50px;
-            color: $color-three;
-            line-height: 12px;
+            background: $color-three;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            color: $color-two;
+            line-height: 60px;
+            border-radius: 50%;
         }
 
     }
