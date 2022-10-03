@@ -2,6 +2,7 @@
 $color-one: #3d3d3d;
 $color-two: #fff;
 $color-three: rgb(255, 196, 0);
+$color-four: rgb(185, 182, 182);
 /*kolory bazowe czcionki itp.*/
 
 
@@ -23,7 +24,6 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
-    border: 2px solid rgb(250, 2, 2);
 }
 
 section {
@@ -116,12 +116,11 @@ header {
 
 /*Button*/
     .btn {
-        margin-bottom: 100px;
-
+        padding-bottom: 80px;
     }
     button {
         cursor: pointer;
-        background: rgb(255, 196, 0);
+        background: $color-three;
         padding: 15px 20px;
         border: none;
         border-radius: 2px;
@@ -136,7 +135,7 @@ header {
 
 /*Section Services and Our Portfolio*/
 .our-work {
-    background: rgb(185, 182, 182);
+    background: $color-four;
     border: 2px solid black;
 }
 .row {
@@ -175,6 +174,13 @@ header {
             line-height: 60px;
             border-radius: 50%;
         }
+    }
+}
+
+.images {
+    border: 2px solid yellow;
+    img {
+        max-width: 300px;
 
     }
 }
