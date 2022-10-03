@@ -22,7 +22,7 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
-    border: 2px solid rgb(0, 255, 34);
+    border: 2px solid rgb(250, 2, 2);
 }
 section {
     padding: 96px 0;
@@ -33,7 +33,7 @@ section {
 .navigation {
     background: $color-one;
     padding: 12px 0;
-    border: 2px solid orange;
+    border: 2px solid rgb(255, 166, 0);
 }   ul {
     padding: 0;
     margin: 0;
@@ -41,7 +41,7 @@ section {
     li {
         display: inline-block;
         margin-right: 36px;
-        border: 1px solid red;
+        border: 1px solid rgb(81, 255, 0);
         position: relative;
     }
     a {
@@ -70,4 +70,30 @@ section {
 }
 .navigation li:hover ul {
     display: block;
+}
+
+/*Header*/
+
+
+/*Button*/
+
+
+/*Section Services*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    h3 {
+        width: 100%; 
+        border: 1px solid purple;
+    }
+    p {
+        width: 100%;
+        border: 1px solid purple;
+    }
+    .box {
+        flex: 1;
+        border: 1px solid blue;
+    }
 }
