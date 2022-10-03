@@ -1,7 +1,7 @@
 /* Variables */
 $color-one: rgb(92, 143, 33);
 $color-two: #fff;
-$color-three: rgb(233, 233, 25);
+$color-three: rgb(255, 196, 0);
 /*kolory bazowe czcionki itp.*/
 
 
@@ -30,13 +30,24 @@ section {
     padding: 96px 0;
 }
 /* Website Logo */
-
+.logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 0 250px 0 100px;
+    font-size: 24px;
+    transition: 1s all;
+    a {
+        color: $color-three;
+    }
+    &:hover {
+        scale:(1.1);
+    }
+}
 
 /* Navigation */
 
 .navigation {
     padding: 12px 0;
-    border: 2px solid rgb(255, 166, 0);
 }   ul {
     padding: 0;
     margin: 0;
@@ -44,8 +55,9 @@ section {
     li {
         display: inline-block;
         margin-right: 36px;
-        border: 1px solid rgb(81, 255, 0);
         position: relative;
+        font-weight: 700;
+        font-size: 14px;
     }
     a {
         text-decoration: none;
@@ -63,6 +75,8 @@ section {
     text-align: center;
     margin: 0 auto;
     padding: 12px 24px;
+    color: $color-two;
+    background-color: #3d3d3d;
 }   ul ul {
     display: none; // hiding second lvl navigation
     position: absolute;
@@ -78,7 +92,6 @@ section {
 .main {
     position: relative;
     background-image: url("/images/background.png");
-    border: 3px solid pink;
     background-position: center;
     background-size: cover;
 }
@@ -86,13 +99,13 @@ header {
     padding: 100px 0 20px;
     h1 {
         flex: 100%;
-        font-size: 40px;
+        font-size: 50px;
         color: $color-two;
         margin: auto;
     }
     h2 {
         flex: 100%;
-        font-size: 35px;
+        font-size: 40px;
         color: $color-two;
         font-style: italic;
         font-family: 'Times New Roman', Times, serif;
