@@ -1,5 +1,5 @@
 /* Variables */
-$color-one: rgb(92, 143, 33);
+$color-one: #3d3d3d;
 $color-two: #fff;
 $color-three: rgb(255, 196, 0);
 /*kolory bazowe czcionki itp.*/
@@ -12,7 +12,7 @@ $color-three: rgb(255, 196, 0);
 body {
     margin: 0;
     text-align: center;
-    background: #fff;
+    background: $color-two;
     color: #3d3d3d;
     font-size: 16px;
     line-height: 1.7;
@@ -76,7 +76,7 @@ section {
     margin: 0 auto;
     padding: 12px 24px;
     color: $color-two;
-    background-color: #3d3d3d;
+    background-color: $color-one;
 }   ul ul {
     display: none; // hiding second lvl navigation
     position: absolute;
@@ -145,14 +145,33 @@ header {
     justify-content: center;
     h3 {
         flex: 100%; 
-        border: 1px solid purple;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 80px;
+        font-weight: 700;
     }
     p {
         flex: 100%;
-        border: 1px solid purple;
+        margin: 0;
+        font-style: italic;
+        margin-bottom: 40px;
     }
     .box {
         flex: 1;
         border: 1px solid blue;
+        .icon {
+            border: 1px solid red;
+            padding-top: 20px;
+            margin: 10px 0;
+        }
+        h4 {
+            margin: 0;
+        }
+        i {
+            font-size: 50px;
+            color: $color-three;
+            line-height: 12px;
+        }
+
     }
 }
