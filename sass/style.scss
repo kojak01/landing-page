@@ -187,7 +187,7 @@ header {
 
 .images {
     img {
-        max-width: 300px;
+        max-height: 300px;
     }
 }
 img {
@@ -214,6 +214,7 @@ footer {
             padding: 5px 5px;
         }
         li i {
+           cursor: pointer;
            font-size: 20px;
            background: rgb(0, 0, 0); 
            height: 40px;
